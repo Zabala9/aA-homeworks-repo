@@ -5,6 +5,7 @@ class Stack
 
     def push(el)
         @pile << el
+        self
     end
 
     def pop
@@ -15,4 +16,7 @@ class Stack
         return @pile[-1]
     end
 
+    def inspect
+        "<Stack: #{stack.object_id}>"
+    end
 end
