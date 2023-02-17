@@ -12,6 +12,10 @@ class Queue
         @tail.shift
     end
 
+    def size
+        @tail.length
+    end
+
     def peek
         @tail[-1]
     end
