@@ -5,6 +5,7 @@ class Queue
 
     def enqueue(el)
         @tail << el
+        self
     end
 
     def dequeue
@@ -13,5 +14,9 @@ class Queue
 
     def peek
         @tail[-1]
+    end
+
+    def inspect
+        "<Stack: #{stack.object_id}>"
     end
 end
