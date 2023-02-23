@@ -22,9 +22,7 @@ describe Dessert do
       expect(pies.ingredients).to eq([])
     end
 
-    it "raises an argument error when given a non-integer quantity" do
-      
-    end
+    it "raises an argument error when given a non-integer quantity"
   end
 
   describe "#add_ingredient" do
