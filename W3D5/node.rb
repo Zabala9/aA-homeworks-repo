@@ -6,7 +6,6 @@ class Node
         @childen = childen
     end
 
-    
     def dfs(target = nil, &prc)
         prc ||= Proc.new {|node| node.value == target}
         return self if prc.call(self) # self es child from method down
