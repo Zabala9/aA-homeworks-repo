@@ -14,7 +14,7 @@ class User < ApplicationRecord
 
     def is_password?(password)
         if password != :password_digest
-            
+            puts "The password is incorrect. Please, try again."
         end
     end
 
